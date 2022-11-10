@@ -1,0 +1,111 @@
+.body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../images/sea.jpg');
+  background-size: cover;
+}
+
+.support {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 280px 270px;
+  z-index: 1;
+}
+
+.jail {
+  width: 120px;
+  height: 120px;
+  left: -5px;
+  top: 7px;
+  position: absolute;
+}
+
+.dialog {
+  width: 400px;
+  height: 300px;
+}
+
+.container {
+  display: flex;
+  position: relative;
+}
+
+.dialog__container {
+  position: relative;
+  right: 370px;
+  top: 25px;
+}
+
+.typeWriter {
+  width: 350px;
+  position: relative;
+  left: -740px;
+  top: 60px;
+  font: 400 20px/24px 'Inter', sans-serif;
+}
+
+.items {
+  position: absolute;
+  bottom: 100px;
+  left: 450px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 75px;
+}
+
+.input {
+  position: absolute;
+  top: 254px;
+  left: 872px;
+  width: 300px;
+  height: 30px;
+  font: 500 20px/20px 'Inter',sans-serif;
+}
+
+.error {
+  position: absolute;
+  top: 293px;
+  left: 877px;
+  color: red;
+  font: 500 20px/20px 'Inter',sans-serif;
+}
+
+.btn_hover {
+  position: absolute;
+  top: 300px;
+  left: 900px;
+  width: 200px;
+  font-size: 20px;
+  font-weight: 900;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn_hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn_hover:focus {
+  outline: none;
+}
+
+.btn_hover.color_9 {
+  background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+  box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}

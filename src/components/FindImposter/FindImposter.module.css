@@ -1,0 +1,58 @@
+.body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../images/FindImposter.jpg');
+  background-size: 1440px 920px;
+}
+
+.bubka {
+  position: relative;
+  top: -87px;
+  left: 494px;
+  opacity: 0.8;
+  fill-opacity: 0.871;
+  width: 30px;
+  cursor: pointer;
+}
+
+.image {
+  width: 170px;
+}
+
+.support {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 280px 270px;
+  z-index: 1;
+}
+
+.dialog {
+  width: 400px;
+  height: 300px;
+}
+
+.container {
+  display: flex;
+  position: relative;
+}
+
+.dialog__container {
+  position: relative;
+  right: 370px;
+  top: 25px;
+}
+
+.typeWriter {
+  width: 350px;
+  position: relative;
+  left: -735px;
+  top: 60px;
+  font: 400 20px/24px 'Inter', sans-serif;
+}
+
+.content {
+  width: 1440px;
+  position: relative;
+}

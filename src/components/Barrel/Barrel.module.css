@@ -1,0 +1,7 @@
+.item {
+  transition: opacity .2s linear;
+}
+.item:hover {
+  cursor: pointer;
+  opacity: .6;
+}

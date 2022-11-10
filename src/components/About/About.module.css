@@ -1,0 +1,38 @@
+.body {
+  background-color: aquamarine;
+  padding-bottom: 150px;
+}
+.header {
+  text-align: center;
+  font: 900 40px/40px "Inter", sans-serif;
+  padding: 50px 0 100px;
+}
+.items {
+  display: flex;
+  column-gap: 100px;
+  row-gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.image {
+  height: 600px;
+  width: 500px;
+  object-fit: cover;
+}
+
+.name {
+  font: 900 30px/30px 'Inter', sans-serif;
+}
+
+.header_second {
+  text-align: center;
+  font: 900 40px/40px "Inter", sans-serif;
+  margin-top: 50px;
+}
