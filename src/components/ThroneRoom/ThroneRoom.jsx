@@ -1,18 +1,18 @@
-import styles from './ThroneRoom.module.css';
+import styles from "./ThroneRoom.module.css";
 import { CatSmile } from "../../icons/CatSmile";
 import Typewriter from "typewriter-effect";
 import Dialog from "../../images/dialog.svg";
 import treasure from "../../images/treasure.svg";
 import { NavLink } from "react-router-dom";
-import { useState, useEffect } from "react";
-import useSound from 'use-sound';
-import sound from '../../sound/throne.mp3';
+import { useEffect } from "react";
+import useSound from "use-sound";
+import sound from "../../sound/throne.mp3";
 
 export const ThroneRoom = () => {
   const [play] = useSound(sound);
-  useEffect((() => {
-    play()
-  }), [play])
+  useEffect(() => {
+    play();
+  }, [play]);
   return (
     <div className={styles.body}>
       <div className={styles.container}>
@@ -45,9 +45,13 @@ export const ThroneRoom = () => {
           />
         </div>
       </div>
-      <NavLink to='/congratulation'>
-        <img src={treasure} alt="Сундук с сокровищами" className={styles.treasure}/>
+      <NavLink to="/congratulation">
+        <img
+          src={treasure}
+          alt="Сундук с сокровищами"
+          className={styles.treasure}
+        />
       </NavLink>
     </div>
-  )
-}
+  );
+};

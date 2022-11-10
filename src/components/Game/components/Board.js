@@ -8,14 +8,14 @@ import { CatWalk } from "../../../icons/CatWalk";
 import Typewriter from "typewriter-effect";
 import Dialog from "../../../images/dialog.svg";
 import { NavLink } from "react-router-dom";
-import useSound from 'use-sound';
-import sound from '../../../sound/game.mp3';
+import useSound from "use-sound";
+import sound from "../../../sound/game.mp3";
 
 export const BoardView = () => {
   const [play] = useSound(sound);
-  useEffect((() => {
-    play()
-  }), [play])
+  useEffect(() => {
+    play();
+  }, [play]);
   const [board, setBoard] = useState(new Board());
 
   const handleKeyDown = (event) => {
@@ -51,20 +51,20 @@ export const BoardView = () => {
     });
   const resetGame = () => {
     setBoard(new Board());
-  }
+  };
   return (
     <div className="body">
-      <div className='container'>
-        <div className='support'>
+      <div className="container">
+        <div className="support">
           <CatWalk />
         </div>
-        <div className='dialog__container'>
-          <img src={Dialog} alt="Окошко диалога" className='dialog' />
-          <div class='typewriter'>
+        <div className="dialog__container">
+          <img src={Dialog} alt="Окошко диалога" className="dialog" />
+          <div class="typewriter">
             <p></p>
           </div>
         </div>
-        <div className='typeWriter'>
+        <div className="typeWriter">
           <Typewriter
             onInit={(typewriter) => {
               typewriter
@@ -90,7 +90,9 @@ export const BoardView = () => {
         </div>
       </div>
       <div className="details-box">
-        <div className="resetButton" onClick={resetGame}>New Game</div>
+        <div className="resetButton" onClick={resetGame}>
+          New Game
+        </div>
         <div className="score-box">
           <div className="score-header">SCORE</div>
           <div>{board.score}</div>
@@ -99,11 +101,11 @@ export const BoardView = () => {
       <div className="board">
         {cells}
         {tiles}
-        <GameOverlay onRestart={resetGame} board={board}/>
+        <GameOverlay onRestart={resetGame} board={board} />
       </div>
       {board.hasWon() ? (
         <div className="continue">
-          <NavLink to='/puzzle'>
+          <NavLink to="/puzzle">
             <button class="btn-hover color-3">^_^ ВПЕРЁД ^_^</button>
           </NavLink>
         </div>

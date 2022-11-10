@@ -35,17 +35,17 @@
   position: relative;
   left: -742px;
   top: 53px;
-  font: 400 20px/24px 'Inter', sans-serif;
+  font: 400 20px/24px "Inter", sans-serif;
 }
 
 .treasure {
   position: relative;
   top: -100px;
   left: 800px;
-  transition: opacity .2s linear;
+  transition: opacity 0.2s linear;
 }
 
 .treasure:hover {
-  opacity: .6;
+  opacity: 0.6;
   cursor: pointer;
 }

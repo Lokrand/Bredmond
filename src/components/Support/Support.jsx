@@ -1,17 +1,17 @@
-import styles from './Support.module.css';
-import { CatSmile } from '../../icons/CatSmile';
+import styles from "./Support.module.css";
+import { CatSmile } from "../../icons/CatSmile";
 import Typewriter from "typewriter-effect";
 import Dialog from "../../images/dialog.svg";
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
-import useSound from 'use-sound';
-import sound from '../../sound/support.mp3';
+import useSound from "use-sound";
+import sound from "../../sound/support.mp3";
 
 export const Support = () => {
   const [play] = useSound(sound);
-  useEffect((() => {
-    play()
-  }), [play])
+  useEffect(() => {
+    play();
+  }, [play]);
   return (
     <div className={styles.body}>
       <div className={styles.container}>
@@ -29,7 +29,9 @@ export const Support = () => {
             onInit={(typewriter) => {
               typewriter
                 .changeDelay(50)
-                .typeString("Привет-мяу, я космический код Брэдмонд, некоторые люди путают меня с мультиваркой от Redmond, но уверяю тебя, между нами нет ничего общего...")
+                .typeString(
+                  "Привет-мяу, я космический код Брэдмонд, некоторые люди путают меня с мультиваркой от Redmond, но уверяю тебя, между нами нет ничего общего..."
+                )
                 .deleteAll(1)
                 .changeDelay(50)
                 .typeString(
@@ -52,9 +54,9 @@ export const Support = () => {
           />
         </div>
       </div>
-      <NavLink to='/sea'>
+      <NavLink to="/sea">
         <button className={styles.glow_on_hover}>Найдём его!</button>
       </NavLink>
     </div>
-  )
-}
+  );
+};

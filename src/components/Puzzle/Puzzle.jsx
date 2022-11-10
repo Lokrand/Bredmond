@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Board from "./Board";
 import { updateURLParameter } from "./helpers";
 import styles from "./Puzzle.module.css";
@@ -6,14 +6,15 @@ import bubka from "../../images/puzzle.jpg";
 import { CatSmile } from "../../icons/CatSmile";
 import Typewriter from "typewriter-effect";
 import Dialog from "../../images/dialog.svg";
-import useSound from 'use-sound';
-import sound from '../../sound/puzzle.mp3';
+import useSound from "use-sound";
+import sound from "../../sound/puzzle.mp3";
+
 export const Puzzle = () => {
   const [imgUrl, setImgUrl] = useState(bubka);
   const [play] = useSound(sound);
-  useEffect((() => {
-    play()
-  }), [play])
+  useEffect(() => {
+    play();
+  }, [play]);
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
