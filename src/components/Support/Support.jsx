@@ -1,12 +1,12 @@
 import styles from "./Support.module.css";
 import { CatSmile } from "../../icons/CatSmile";
 import Typewriter from "typewriter-effect";
-import Dialogi from "../../images/dialog.svg";
+import Dialog from "../../images/dialog.svg";
 import { NavLink } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import useSound from "use-sound";
 import sound from "../../sound/support.mp3";
-import { Dialog } from "../../icons/Dialog";
+
 export const Support = () => {
   const [play] = useSound(sound);
   useEffect(() => {
@@ -19,8 +19,7 @@ export const Support = () => {
           <CatSmile />
         </div>
         <div className={styles.dialog__container}>
-          <Dialog />
-          <img src={Dialogi} alt="Окошко диалога" className={styles.dialog} />
+          <img src={Dialog} alt="Окошко диалога" className={styles.dialog} />
           <div class={styles.typewriter}>
             <p></p>
           </div>
