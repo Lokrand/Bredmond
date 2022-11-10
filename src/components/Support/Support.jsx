@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import useSound from "use-sound";
 import sound from "../../sound/support.mp3";
-
+import { Dialog } from "../../icons/Dialog";
 export const Support = () => {
   const [play] = useSound(sound);
   useEffect(() => {
@@ -19,6 +19,7 @@ export const Support = () => {
           <CatSmile />
         </div>
         <div className={styles.dialog__container}>
+          <Dialog />
           <img src={Dialog} alt="Окошко диалога" className={styles.dialog} />
           <div class={styles.typewriter}>
             <p></p>
