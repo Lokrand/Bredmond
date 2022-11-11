@@ -1,5 +1,5 @@
 import styles from "./Congratulation.module.css";
-import mrPes from "../../videos/preview.mp4";
+import mrPes from "../../videos/grats.mp4";
 import { NavLink } from "react-router-dom";
 
 export const Congratulation = () => {

@@ -19,13 +19,13 @@ function App() {
     <div>
       <Router>
         <Switch>
-          <Route path="/Bredmond/beginning">
+          <Route path="/beginning">
             <Beginning />
           </Route>
-          <Route path="/Bredmond/prolog">
+          <Route path="/prolog">
             <Prolog />
           </Route>
-          <Route path="/Bredmond/support">
+          <Route path="/support">
             <Support />
           </Route>
           <Route path="/sea">
