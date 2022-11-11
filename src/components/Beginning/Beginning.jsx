@@ -1,6 +1,6 @@
 import styles from "./Beginning.module.css";
 import { NavLink } from "react-router-dom";
-import mrPes from "../../videos/preview.mp4";
+import mrPes from "../../videos/beginning.mp4";
 
 export const Beginning = () => {
   return (
