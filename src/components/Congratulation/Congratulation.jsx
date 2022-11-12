@@ -10,7 +10,7 @@ export const Congratulation = () => {
           О проекте
         </button>
       </NavLink>
-      <video autoPlay>
+      <video autoPlay className={styles.video}>
         <source src={mrPes} type="video/mp4" />
       </video>
     </div>

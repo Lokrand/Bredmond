@@ -46,3 +46,7 @@ button:hover {
 button:focus {
   outline: none;
 }
+
+.video  {
+  width: 1440px;
+}
