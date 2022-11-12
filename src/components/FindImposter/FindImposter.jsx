@@ -10,11 +10,8 @@ import sound from '../../sound/findImposter.mp3';
 
 export const FindImposter = () => {
   const [state, setState] = useState(false)
-  // let render = false;
-  useEffect(() => {
-    setState(true);
-  }, [])
   setTimeout(() => {
+    setState(true);
   }, 2000)
   const [play] = useSound(sound);
   useEffect((() => {

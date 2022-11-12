@@ -27,6 +27,7 @@
   align-items: center;
   margin: 280px 270px;
   z-index: 1;
+  right: -585px;
 }
 
 .dialog {
@@ -41,14 +42,14 @@
 
 .dialog__container {
   position: relative;
-  right: 370px;
+  right: -200px;
   top: 25px;
 }
 
 .typeWriter {
   width: 350px;
   position: relative;
-  left: -735px;
+  left: -175px;
   top: 60px;
   font: 400 20px/24px 'Inter', sans-serif;
 }
