@@ -3,8 +3,10 @@
   src: url("./clear-sans.ttf") format("truetype");
 }
 
-body {
+.body {
   display: flex;
+  width: 100vw;
+  height: 100vh;
   background-image: url('../../images/dang.jpg');
   background-size: cover;
   flex-direction: column;
@@ -41,6 +43,7 @@ body {
 }
 
 .details-box {
+  width: 450px;
   display: flex;
   align-items: center;
   padding: 10px;

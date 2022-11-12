@@ -34,6 +34,9 @@ function App() {
               setModalActive={setComponentModalActive}
             />
           </Route>
+          <Route path="/game">
+            <Game />
+          </Route>
           <Route path="/findImposter">
             <FindImposter />
           </Route>
@@ -48,9 +51,6 @@ function App() {
           </Route>
           <Route path="/puzzle">
             <Puzzle />
-          </Route>
-          <Route path="/game">
-            <Game />
           </Route>
           <Route path="/" a>
             <Preview />

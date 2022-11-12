@@ -3,6 +3,7 @@ version: '3.4'
 services:
   bredmond:
     image: bredmond
+    restart: always
     build:
       context: .
       dockerfile: ./Dockerfile
