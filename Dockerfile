@@ -1,4 +1,4 @@
-FROM node:18-slim
+FROM node:20-bookworm
 ENV NODE_ENV=production
 WORKDIR /app
 COPY . /app
