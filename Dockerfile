@@ -2,7 +2,7 @@ FROM node:20-bookworm
 ENV NODE_ENV=production
 WORKDIR /app
 COPY . /app
-RUN npm install
+RUN npm install --force
 EXPOSE 3000
 # RUN chown -R node /usr/src/app
 # USER node
